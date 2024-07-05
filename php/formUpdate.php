@@ -24,17 +24,17 @@
     <div class="wrapper-form">
         <form class="form-dados" action="../php/processarUpdate.php" method="post">
             <h1>Editar Dados</h1>
-            <input type="hidden" name="containerId" value="<?php echo $id?>">
+            <input type="hidden" name="containerId" required value="<?php echo $id?>">
             <label>Nome:</label>
-            <input type="text" name="containerNome" value="<?php echo $nome?>">
+            <input type="text" name="containerNome" required value="<?php echo $nome?>">
             <label>Sobrenome:</label>
-            <input type="text" name="containerSobrenome" value="<?php echo $sobrenome?>">
+            <input type="text" name="containerSobrenome" required value="<?php echo $sobrenome?>">
             <label>Idade:</label>
-            <input type="number" name="containerIdade" value="<?php echo $idade?>">
+            <input type="number" name="containerIdade" required value="<?php echo $idade?>">
             <label>Peso:</label>
-            <input type="number" name="containerPeso" value="<?php echo $peso?>">
+            <input type="number" name="containerPeso" required value="<?php echo $peso?>">
             <label>Altura:</label>
-            <input type="number" name="containerAltura" step="0.01" value="<?php echo $altura?>">
+            <input type="number" name="containerAltura" step="0.01" required value="<?php echo $altura?>">
             <input type="submit" value="Atualizar Dados">
         </form>
     </div>

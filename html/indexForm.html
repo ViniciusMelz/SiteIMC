@@ -18,15 +18,15 @@
         <form class="form-dados" action="../php/processarForm.php" method="post">
             <h1>Insira seus dados</h1>
             <label>Nome:</label>
-            <input type="text" name="containerNome">
+            <input type="text" name="containerNome" required>
             <label>Sobrenome:</label>
-            <input type="text" name="containerSobrenome">
+            <input type="text" name="containerSobrenome" required>
             <label>Idade:</label>
-            <input type="number" name="containerIdade">
+            <input type="number" name="containerIdade" required>
             <label>Peso:</label>
-            <input type="number" name="containerPeso">
+            <input type="number" name="containerPeso" required>
             <label>Altura:</label>
-            <input type="number" name="containerAltura" step="0.01">
+            <input type="number" name="containerAltura" step="0.01" required>
             <input type="submit" value="Salvar">
         </form>
     </div>
